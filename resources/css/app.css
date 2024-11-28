@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    h1 {
+        @apply text-gray-50;
+    }
+
+    h2 {
+        @apply text-gray-100;
+    }
+
+    h3 {
+        @apply text-gray-150;
+    }
+
+    h4 {
+        @apply text-gray-200;
+    }
+
+    p {
+        @apply text-gray-250;
+    }
+}
+
+@layer components {
+    .container {
+        @apply bg-gray-800;
+    }
+
+    .sub-container {
+        @apply bg-gray-900;
+    }
+
+    .icon {
+        @apply h-[25px] brightness-0 invert dark:brightness-100 dark:invert-0;
+    }
+
+}
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-y-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+}
