@@ -24,9 +24,9 @@
                         <p class="text-lg text-white bg-orange-500/90 rounded-lg px-3 font-semibold">{{ $title }}</p>
                     </div>
                     <div class="flex items-center h-full">
-                        <a href="/"><h1 class="font-semibold mr-3 text-lg">home</h1></a>
-                        <a href="/demo"><h1 class="font-semibold mr-3 text-lg">demo</h1></a>
-                        <h1 class="font-semibold mr-8 text-lg">contact</h1>
+                        <a href="/"><h1 class="font-semibold mr-4 text-lg">home</h1></a>
+                        <a href="/demo"><h1 class="font-semibold mr-4 text-lg">demo</h1></a>
+                        <h1 class="font-semibold mr-9 text-lg">contact</h1>
                         <div class="flex items-center h-fit py-1 px-2 border-l border-gray-600">
                             <button class="relative group flex items-center justify-center mr-6">
                                 <img src="/img/dark.svg" class="w-[1.2rem] dark:invert">
