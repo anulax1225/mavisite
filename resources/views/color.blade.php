@@ -10,8 +10,8 @@
         @vite("resources/css/app.css")
     </head>
     <body class="relative w-screen h-screen flex flex-col bg-gray-700">
-        <img src="/img/logo-mavisite360.png" class="absolute w-[8rem] m-2">
-        <div class="flex justify-center items-center mt-10 mx-auto p-3  h-fit rounded-xl bg-white">
+        <img src="/img/logo-mavisite360.png" class="absolute w-[5rem] m-2">
+        <div class="w-5/6 flex justify-center items-center mt-10 mx-auto p-3  h-fit rounded-xl bg-black">
             <div class="w-[5rem] h-[5rem] rounded-full bg-orange-50 mx-1"></div>
             <div class="w-[5rem] h-[5rem] rounded-full bg-orange-100 mx-1"></div>
             <div class="w-[5rem] h-[5rem] rounded-full bg-orange-200 mx-1"></div>
@@ -24,7 +24,7 @@
             <div class="w-[5rem] h-[5rem] rounded-full bg-orange-900 mx-1"></div>
             <div class="w-[5rem] h-[5rem] rounded-full bg-orange-950 mx-1"></div>
         </div>
-        <div class="flex justify-center items-center mt-10 mx-auto p-3  h-fit rounded-xl bg-gradient-to-r from-black to-white">
+        <div class="w-5/6 flex flex-wrap justify-center items-center mt-10 mx-auto p-3  h-fit rounded-xl bg-black">
             <div class="w-[5rem] h-[5rem] rounded-full bg-gray-50 mx-1"></div>
             <div class="w-[5rem] h-[5rem] rounded-full bg-gray-100 mx-1"></div>
             <div class="w-[5rem] h-[5rem] rounded-full bg-gray-150 mx-1"></div>

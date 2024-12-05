@@ -9,19 +9,23 @@
     }
 
     h2 {
-        @apply text-gray-100;
-    }
-
-    h3 {
         @apply text-gray-150;
     }
 
+    h3 {
+        @apply text-gray-250;
+    }
+
     h4 {
-        @apply text-gray-200;
+        @apply text-gray-350;
+    }
+
+    h5 {
+        @apply text-white;
     }
 
     p {
-        @apply text-gray-250;
+        @apply text-gray-550;
     }
 }
 
@@ -35,12 +39,16 @@
     }
 
     .icon {
-        @apply h-[25px] brightness-0 invert dark:brightness-100 dark:invert-0;
+        @apply h-[25px] invert dark:brightness-100 dark:invert-0;
     }
 
 }
 
 @layer utilities {
+    .bg-radial {
+        background: radial-gradient(hsla(0, 0%, 5%, 0.568), hsla(0, 0%, 25%, 0));
+    }
+
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
         display: none;

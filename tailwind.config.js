@@ -24,6 +24,7 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 pro: ['Open Sans', 'Arial'],
+                robo: ['Roboto']
             },
             colors: {
                 gray: {
