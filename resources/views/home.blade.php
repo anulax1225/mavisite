@@ -2,7 +2,7 @@
 
 @section("content")
     <div class="relative flex flex-col items-center justify-center overflow-hidden">
-        <img class="w-full absolute right-0 left-0 -z-10 blur-[3px]" src="/img/immo.jpg">
+        <img class="w-full absolute right-0 left-0 -z-10 blur-[4px]" src="/img/immo.jpg">
         <div class="bg-gradient-to-tr from-orange-600 to-orange-400 rounded-lg shadow-md shadow-gray-800 flex flex-col items-center p-10 mt-10 mb-10 w-fit">
             <h5 class="text-[6rem] font-bold mx-auto leading-none">Ma Visite 360</h5>
             <h5 class="text-[1.2rem] italic text-center mx-auto">Ma visite, mon choix à 360°</h5>
@@ -52,7 +52,7 @@
         
         <h1 class="px-3 text-[3rem] font-semibold mt-7">Services et offres</h1>
         <div class="w-full px-3 flex justify-between items-center">
-            <div class="w-[40%] p-5 mr-2 hover:scale-[1.01] bg-gradient-to-r from-orange-500 to-orange-600 shadow-md shadow-gray-900 rounded-lg">
+            <div class="w-[40%] p-8 mr-2 hover:scale-[1.01] bg-gradient-to-r from-orange-500 to-orange-600 shadow-md shadow-gray-900 rounded-lg">
                 <h5 class="text-[2rem] font-semibold text-center">Visite</h5>
                 <ul class="text-gray-50 text-[1rem] list-disc px-5">
                     <li><h5 class="font-semibold mb-2">Capture des photos 360° haute définition.</h5></li>
@@ -60,7 +60,7 @@
                     <li><h5 class="font-semibold">Hébergement en ligne sur notre plateforme.</h5></li>
                 </ul>
             </div>
-            <div class="w-[60%] p-8 ml-1 hover:scale-[1.01] bg-gradient-to-r from-orange-500 to-orange-600 shadow-md shadow-gray-900 rounded-lg">
+            <div class="w-[60%] p-5 ml-1 hover:scale-[1.01] bg-gradient-to-r from-orange-500 to-orange-600 shadow-md shadow-gray-900 rounded-lg">
                 <h5 class="text-[2rem] font-semibold text-center">Valeur ajoutée</h5>
                 <ul class="text-gray-50 text-[1rem] list-disc px-5">
                     <li><h5 class="font-semibold mb-2">Simplifie les visites pour les acheteurs potentiels.</h5></li>

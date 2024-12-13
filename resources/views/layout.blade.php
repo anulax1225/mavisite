@@ -24,9 +24,9 @@
                         <p class="text-lg text-white bg-gradient-to-tr from-orange-400 to-orange-600 rounded-lg px-4 font-semibold">{{ $title }}</p>
                     </div>
                     <div class="flex items-center h-full">
-                        <a href="/"><h1 class="mr-4 text-xl font-bold hover:scale-105">home</h1></a>
-                        <a href="/demo"><h1 class="font-bold mr-4 text-xl hover:scale-105">demo</h1></a>
-                        <a href="#contact"><h1 class="font-bold mr-9 text-xl hover:scale-105">contact</h1></a>
+                        <a href="/"><h1 class="mr-4 text-xl font-bold hover:scale-110">home</h1></a>
+                        <a href="/demo"><h1 class="font-bold mr-4 text-xl hover:scale-110">demo</h1></a>
+                        <a href="#contact"><h1 class="font-bold mr-9 text-xl hover:scale-110">contact</h1></a>
                         <div class="flex items-center h-fit py-[8px] pl-5 border-l border-gray-700">
                             <button class="relative group flex items-center justify-center mr-6" 
                             onclick="document.querySelector('#theme-panel').classList.toggle('hidden')">
@@ -54,7 +54,7 @@
         <footer class="w-full bg-gray-800">
             <div class="w-3/4 px-3 mx-auto flex flex-col items-center justify-between">
                 <div class="w-full mt-10 flex flex-col items-center">
-                    <h2 class="font-semibold text-[1.4rem] mb-1">Nos partenaires</h2>
+                    <h2 class="font-semibold text-[1.7rem] mb-1">Nos partenaires</h2>
                     <div class="relative w-full flex items-center h-20 mb-5 overflow-hidden">
                         <img src="/img/panoee.png" class="w-32 slider" style="--delay: 0s;">
                         <img src="/img/infomaniak.png" class="w-32 slider" style="--delay: 2s;">
@@ -70,10 +70,16 @@
                 <div class="w-full mt-5 flex items-center">
                     <div id="contact" class="w-1/3 mb-10">
                         <h2 class="font-semibold text-[1.7rem] border-b-2 border-gray-750 w-3/4 pr-20 mb-2">Nous contacter</h2>
-                        <div class="px-3">
-                            <h4 class="font-semibold mb-1">+41 78 694 09 79</h4>
-                            <h4 class="font-semibold mb-1">contact@mv360.ch</h4>
-                            <h4 class="font-semibold">Rue de la Maladière 80</h4>
+                        <div class="w-full flex">
+                            <div class="px-3">
+                                <h4 class="font-semibold mb-1">+41 78 694 09 79</h4>
+                                <h4 class="font-semibold mb-1">contact@mv360.ch</h4>
+                                <h4 class="font-semibold">Rue de la Maladière 80</h4>
+                            </div>
+                            <a target="_blank" href="mailto:contact@mv360.ch?subject=Mail de contact de &#34;Ma Visite 360&#34;" 
+                            class="h-fit rounded-lg text-sm hover:scale-105 bg-orange-600 px-4 py-2 text-white font-bold mb-2">
+                                Envoyer un mail
+                            </a>
                         </div>
                     </div>
                     <div class="flex items-start justify-evenly w-1/3 mb-10">
@@ -93,7 +99,7 @@
                             <img src="/img/twitter.svg" class="w-[2rem] invert">
                         </div>
                     </div>
-                    <p class="italic w-1/3 text-right self-end">&copy; 2024 Créer par l'équipe Ma Visite 360</p>
+                    <p class="italic w-1/3 text-right self-end pb-2">&copy; 2024 Créer par l'équipe Ma Visite 360</p>
                 </div>
             </div>
         </footer>
