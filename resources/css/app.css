@@ -58,4 +58,56 @@
         -ms-overflow-y-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
+
+    .social-icon-in {
+        animation: 0.2s social-icon-in-anim ease-out forwards;
+    }
+
+    .social-icon-out {
+        animation: 0.2s social-icon-out-anim ease-in forwards;
+    }
+
+    .slider {
+        position: absolute;
+        left: -50%;
+        animation-name: slide;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: var(--delay);
+    }
+
+    @keyframes social-icon-in-anim {
+        from {
+            background-color: inherit;
+            transform: scale(1);
+        }
+        to {
+            background-color: rgb(234 88 12 / 0.8);
+            transform: scale(0.9);
+        }
+    }
+
+    @keyframes social-icon-out-anim {
+        from {
+            background-color: rgb(234 88 12 / 0.8);
+            transform: scale(0.9);
+        }
+        to {
+            background-color: inherit;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes slide {
+        from {
+            left: -25%;
+        }
+        to {
+            left: 100%;
+        }
+    }
+
 }
+
+
