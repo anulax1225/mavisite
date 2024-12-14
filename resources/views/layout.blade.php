@@ -18,7 +18,7 @@
         <!--<img src="/img/lightsource.png" class="w-full absolute top-0 right-0 left-0 -z-10">-->
         <nav class="sticky right-0 left-0 top-0 h-16 z-50">
             <div class="w-full h-full flex items-center justify-center bg-gradient-to-r from-gray-850 via-gray-600 to-gray-850 pb-[2px]">
-                <div class="w-full h-full px-[12.5%] flex justify-between bg-gray-800">
+                <div class="w-full h-full px-[12.5%] flex justify-between bg-gray-850">
                     <div class="flex items-center h-full">
                         <a href="/" class="h-full"><img src="/img/logo-mavisite360.png" class="h-full hover:scale-105 mr-2 p-3"></a>
                         <p class="text-lg text-white bg-gradient-to-tr from-orange-400 to-orange-600 rounded-lg px-4 font-semibold">{{ $title }}</p>
@@ -53,20 +53,6 @@
         @yield("content")
         <footer class="w-full bg-gray-800">
             <div class="w-3/4 px-3 mx-auto flex flex-col items-center justify-between">
-                <div class="w-full mt-10 flex flex-col items-center">
-                    <h2 class="font-semibold text-[1.7rem] mb-1">Nos partenaires</h2>
-                    <div class="relative w-full flex items-center h-20 mb-5 overflow-hidden">
-                        <img src="/img/panoee.png" class="w-32 slider" style="--delay: 0s;">
-                        <img src="/img/infomaniak.png" class="w-32 slider" style="--delay: 2s;">
-                        <img src="/img/cpne.jpg" class="w-32 slider" style="--delay: 4s;">
-                        <img src="/img/entreprise_immo_1.png" class="w-32 slider" style="--delay: 6s;">
-                        <img src="/img/entreprise_immo_2.jpeg" class="w-32 slider" style="--delay: 8s;">
-                        <img src="/img/entreprise_immo_3.png" class="w-32 slider" style="--delay: 10s;">
-                        <img src="/img/entreprise_immo_4.png" class="w-32 slider" style="--delay: 12s;">
-                        <img src="/img/entreprise_immo_5.webp" class="w-32 slider" style="--delay: 14s;">
-                        <img src="/img/entreprise_immo_6.png" class="w-32 slider" style="--delay: 16s;">
-                    </div>
-                </div>
                 <div class="w-full mt-5 flex items-center">
                     <div id="contact" class="w-1/3 mb-10">
                         <h2 class="font-semibold text-[1.7rem] border-b-2 border-gray-750 w-3/4 pr-20 mb-2">Nous contacter</h2>
@@ -99,8 +85,22 @@
                             <img src="/img/twitter.svg" class="w-[2rem] invert">
                         </div>
                     </div>
-                    <p class="italic w-1/3 text-right self-end pb-2">&copy; 2024 Créer par l'équipe Ma Visite 360</p>
                 </div>
+                <div class="w-full mt-10 flex flex-col items-center">
+                    <h2 class="font-semibold text-[1.7rem] mb-1">Nos partenaires</h2>
+                    <div class="relative w-full flex items-center h-20 mb-5 overflow-hidden">
+                        <img src="/img/panoee.png" class="w-32 slider" style="--delay: 0s;">
+                        <img src="/img/infomaniak.png" class="w-32 slider" style="--delay: 2s;">
+                        <img src="/img/cpne.jpg" class="w-32 slider" style="--delay: 4s;">
+                        <img src="/img/entreprise_immo_1.png" class="w-32 slider" style="--delay: 6s;">
+                        <img src="/img/entreprise_immo_2.jpeg" class="w-32 slider" style="--delay: 8s;">
+                        <img src="/img/entreprise_immo_3.png" class="w-32 slider" style="--delay: 10s;">
+                        <img src="/img/entreprise_immo_4.png" class="w-32 slider" style="--delay: 12s;">
+                        <img src="/img/entreprise_immo_5.webp" class="w-32 slider" style="--delay: 14s;">
+                        <img src="/img/entreprise_immo_6.png" class="w-32 slider" style="--delay: 16s;">
+                    </div>
+                </div>
+                <p class="italic w-1/3 text-right self-end pb-2">&copy; 2024 Créer par l'équipe Ma Visite 360</p>
             </div>
         </footer>
     </body>

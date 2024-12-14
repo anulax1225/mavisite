@@ -1,4 +1,4 @@
-name: viewer360
+name: mv360
 recipe: laravel
 config:
   via: nginx
@@ -61,11 +61,13 @@ services:
     name: redis
     type: redis
 proxy:
+  appserver_nginx: 
+    - localhost.mv360.ch
   minio:
-    - s3-viewer360.lndo.site:9000
-    - s3admin-viewer360.lndo.site:9001
+    - s3-mv360.lndo.site:9000
+    - s3admin-mv360.lndo.site:9001
   mailpit:
-    - mailpit-viewer360.lndo.site:8025
+    - mailpit-mv360.lndo.site:8025
 # if you use node, these below will configure the shortcuts
 #  - lando dev => npm run dev in the node container
 #  - lando build => npm run build in the node container
