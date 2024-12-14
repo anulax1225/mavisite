@@ -13,9 +13,8 @@
         <h1 class="mt-10 px-3 text-[3rem] font-bold border-b border-gray-750">Histoire</h1>
         <div class="w-full flex items-start mt-2">
             <h2 class="pl-3 mr-16 w-1/2 text-[1.5rem] font-semibold">
-                Fondée en 2024 et basée à Neuchâtel.<br> 
-                "Ma Visite 360" est une entreprise fictive spécialisée dans les technologies immersives, 
-                avec un site web accessible sous le nom de domaine mv360.ch.
+            Fondée en 2024 et basée à Neuchâtel.<br> 
+            MaVisite360 est une entreprise fictive spécialisée dans les technologies immersives de visite virtuelle.
             </h2>
             <div class="mt-1">
                 <h2 class="text-[1.3rem]">
