@@ -9,16 +9,12 @@ export default {
         './resources/**/*.js',
         './resources/**/*.vue',
     ],
+    darkMode: 'class',
     theme: {
         screens: {
             'tablet': '640px',
-            // => @media (min-width: 640px) { ... }
-      
             'laptop': '1024px',
-            // => @media (min-width: 1024px) { ... }
-      
-            'desktop': '1280px',
-            // => @media (min-width: 1280px) { ... }
+            'desktop': '1400px',
         },
         extend: {
             fontFamily: {
@@ -28,6 +24,7 @@ export default {
             },
             colors: {
                 gray: {
+                    1000: "hsl(0 0 2)",
                     950: "hsl(0 0 5)",
                     900: "hsl(0 0 10)",
                     850: "hsl(0 0 15)",
@@ -47,6 +44,7 @@ export default {
                     150: "hsl(0 0 85)",
                     100: "hsl(0 0 90)",
                     50: "hsl(0 0 95)",
+                    0: "hsl(0 0 98)",
                 },
             },
         },

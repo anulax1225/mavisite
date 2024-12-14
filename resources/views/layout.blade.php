@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,49 +10,37 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <title>Ma Visite 360 - {{ $title }}</title>
-
         @vite("resources/js/app.js")
         @vite("resources/css/app.css")
     </head>
-    <body class="w-screen h-screen antialiased font-robo bg-gray-850 -z-10">
+    <body class="w-screen h-screen antialiased font-robo bg-gray-850 dark:bg-gray-50 -z-10">
         <!--<img src="/img/lightsource.png" class="w-full absolute top-0 right-0 left-0 -z-10">-->
         <nav class="sticky right-0 left-0 top-0 h-16 z-50">
-            <div class="w-full h-full flex items-center justify-center bg-gradient-to-r from-gray-850 via-gray-600 to-gray-850 pb-[2px]">
-                <div class="w-full h-full px-[12.5%] flex justify-between bg-gray-850">
+            <div class="w-full h-full flex items-center justify-center bg-gradient-to-r from-gray-850 dark:from-gray-0 via-gray-600 dark:via-gray-300 to-gray-850 dark:to-gray-0 pb-[2px]">
+                <div class="w-full h-full desktop:px-[12.5%] laptop:px-[5%] flex justify-between bg-gray-850 dark:bg-gray-0">
                     <div class="flex items-center h-full">
                         <a href="/" class="h-full"><img src="/img/logo-mavisite360.png" class="h-full hover:scale-105 mr-2 p-3"></a>
-                        <p class="text-lg text-white bg-gradient-to-tr from-orange-400 to-orange-600 rounded-lg px-4 font-semibold">{{ $title }}</p>
+                        <h5 class="text-lg text-white bg-gradient-to-tr from-orange-400 to-orange-600 rounded-lg px-4 font-semibold">{{ $title }}</h5>
                     </div>
                     <div class="flex items-center h-full">
                         <a href="/"><h1 class="mr-4 text-xl font-bold hover:scale-110">home</h1></a>
                         <a href="/demo"><h1 class="font-bold mr-4 text-xl hover:scale-110">demo</h1></a>
                         <a href="#contact"><h1 class="font-bold mr-9 text-xl hover:scale-110">contact</h1></a>
                         <div class="flex items-center h-fit py-[8px] pl-5 border-l border-gray-700">
-                            <button class="relative group flex items-center justify-center mr-6" 
-                            onclick="document.querySelector('#theme-panel').classList.toggle('hidden')">
-                                <img src="/img/dark.svg" class="w-[1.4rem] hover:scale-105 invert">
-                                <div id="theme-panel" class="absolute hidden bg-gray-800 -bottom-[110px] right-4/5 
-                                w-[160px] rounded-xl overflow-hidden">
-                                    <div class="px-4 pt-2 grid grid-cols-4 hover:bg-gray-600 items-center">
-                                        <img src="/img/dark.svg" class="w-[1.4rem] invert pl-1">
-                                        <h1 class="font-semibold text-[1.1rem] col-span-3 mb-1 text-left">Dark</h1>
-                                    </div>
-                                    <div class="px-4 pb-2 grid grid-cols-4 hover:bg-gray-600 items-center">
-                                        <img src="/img/light.svg" class="w-[1.4rem] invert">
-                                        <h1 class="font-semibold text-[1.1rem] mt-1 col-span-3 text-left">Light</h1>
-                                    </div>
-                                </div>
+                            <button id="btn-theme" class="relative group flex items-center justify-center mr-6" 
+                            onclick="window.themeToggle()">
+                                <img src="/img/light-2.svg" class="w-[1.4rem] hover:scale-105 invert dark:invert-0">
                             </button>
-                            <img src="/img/instagram.svg" class="w-[1.6rem] hover:scale-105 invert mr-3">
-                            <img src="/img/twitter.svg" class="w-[1.6rem] hover:scale-105 invert">
+                            <img src="/img/instagram.svg" class="w-[1.6rem] hover:scale-105 invert dark:invert-0 mr-3">
+                            <img src="/img/twitter.svg" class="w-[1.6rem] hover:scale-105 invert dark:invert-0">
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
         @yield("content")
-        <footer class="w-full bg-gray-800">
-            <div class="w-3/4 px-3 mx-auto flex flex-col items-center justify-between">
+        <footer class="w-full bg-gray-800 dark:bg-gray-0">
+            <div class="desktop:w-3/4 laptop:w-[90%] px-3 mx-auto flex flex-col items-center justify-between">
                 <div class="w-full mt-5 flex items-center">
                     <div id="contact" class="w-1/3 mb-10">
                         <h2 class="font-semibold text-[1.7rem] border-b-2 border-gray-750 w-3/4 pr-20 mb-2">Nous contacter</h2>
@@ -70,19 +58,19 @@
                     </div>
                     <div class="flex items-start justify-evenly w-1/3 mb-10">
                         <div class="hover:social-icon-in social-icon-out p-2 border border-gray-750 rounded-lg">
-                            <img src="/img/linkedin.svg" class="w-[2rem] brightness-0 invert">
+                            <img src="/img/linkedin.svg" class="w-[2rem] brightness-0 invert dark:invert-0">
                         </div>
                         <div class="hover:social-icon-in social-icon-out p-2 border border-gray-750 rounded-lg">
-                            <img src="/img/discord.svg" class="w-[2rem] invert">
+                            <img src="/img/discord.svg" class="w-[2rem] invert dark:invert-0">
                         </div>
                         <div class="hover:social-icon-in social-icon-out p-2 border border-gray-750 rounded-lg">
-                            <img src="/img/facebook.svg" class="w-[2rem] invert">
+                            <img src="/img/facebook.svg" class="w-[2rem] invert dark:invert-0">
                         </div>
                         <div class="hover:social-icon-in social-icon-out p-2 border border-gray-750 rounded-lg">
-                            <img src="/img/instagram.svg" class="w-[2rem] invert">
+                            <img src="/img/instagram.svg" class="w-[2rem] invert dark:invert-0">
                         </div>
                         <div class="hover:social-icon-in social-icon-out p-2 border border-gray-750 rounded-lg">
-                            <img src="/img/twitter.svg" class="w-[2rem] invert">
+                            <img src="/img/twitter.svg" class="w-[2rem] invert dark:invert-0">
                         </div>
                     </div>
                 </div>

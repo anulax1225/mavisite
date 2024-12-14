@@ -5,19 +5,19 @@
 
 @layer base {
     h1 {
-        @apply text-gray-50;
+        @apply text-gray-50 dark:text-gray-1000;
     }
 
     h2 {
-        @apply text-gray-150;
+        @apply text-gray-150 dark:text-gray-850;
     }
 
     h3 {
-        @apply text-gray-250;
+        @apply text-gray-250 dark:text-gray-750;
     }
 
     h4 {
-        @apply text-gray-350;
+        @apply text-gray-350 dark:text-gray-650;
     }
 
     h5 {
@@ -25,7 +25,7 @@
     }
 
     p {
-        @apply text-gray-550;
+        @apply text-gray-550 dark:text-gray-450;
     }
 }
 
@@ -75,6 +75,24 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         animation-delay: var(--delay);
+    }
+
+    .focus-camera {
+        animation-name: blur-anim;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+
+    @keyframes blur-anim {
+        from {
+            filter: blur(0px);
+        }
+
+        to {
+            filter: blur(5px);
+        }
     }
 
     @keyframes social-icon-in-anim {
