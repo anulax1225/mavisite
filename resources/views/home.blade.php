@@ -2,15 +2,15 @@
 
 @section("content")
     <div class="relative flex flex-col items-center justify-center overflow-hidden">
-        <img class="w-full absolute right-0 left-0 -z-10 focus-camera" src="/img/immo.jpg">
+        <img class="absolute right-0 left-0 -z-10 focus-camera" src="/img/immo.jpg">
         <div class="desktop:w-3/4 laptop:w-[90%] bg-gradient-to-tr from-orange-600/80 to-orange-400/80 rounded-lg 
-        shadow-lg shadow-gray-800 flex flex-col items-center p-14 my-7">
-            <h5 class="text-[6rem] font-bold mx-auto leading-none">Ma Visite 360</h5>
-            <h5 class="text-[1.2rem] italic text-center mx-auto">Ma visite, mon choix à 360°</h5>
+        shadow-lg shadow-gray-800 flex flex-col items-center laptop:p-14 p-5 my-7">
+            <h5 class="laptop:text-[6rem] text-[2rem] font-bold mx-auto leading-none">Ma Visite 360</h5>
+            <h5 class="laptop:text-xl text-sm italic text-center mx-auto">Ma visite, mon choix à 360°</h5>
         </div>
     </div>
-    <div class="flex flex-col desktop:w-3/4 laptop:w-[90%] h-fit mx-auto mb-10">
-        <h1 class="mt-10 px-3 text-[3rem] font-bold border-b border-gray-750 dark:border-gray-200">Histoire</h1>
+    <div class="flex flex-col desktop:w-3/4 laptop:w-[90%] px-3 h-fit mx-auto mb-10">
+        <h1 class="mt-10 px-3 laptop:text-[3rem] text-3xl font-bold border-b border-gray-750 dark:border-gray-200">Histoire</h1>
         <div class="w-full flex items-start mt-2">
             <h2 class="pl-3 mr-16 w-1/2 text-[1.5rem] font-semibold">
             Fondée en 2024 et basée à Neuchâtel.<br> 
