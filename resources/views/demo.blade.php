@@ -7,7 +7,7 @@
         laptop:p-[3px] p-[2px] rounded-2xl mt-2 shadow-sm shadow-gray-950 overflow-hidden mb-6">
             <div class="rounded-2xl bg-gray-900 laptop:p-[30px] overflow-hidden w-full h-full">
                 <div class="rounded-xl overflow-hidden w-full h-full shadow-xl shadow-gray-950">
-                    <iframe src="https://tour.panoee.net/natadesa-endek/62621a50118202256c6ab134" class="w-full h-full"></iframe>
+                    <iframe src="https://tour.panoee.net/677f7df0c321a92092e365dd" class="w-full h-full"></iframe>
                 </div>
             </div>
         </div>

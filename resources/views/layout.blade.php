@@ -66,7 +66,7 @@
                                 <h1 class="font-bold text-xl dark:text-gray-900">demo</h1>
                             </a>
                             <a href="#contact" class="flex items-center px-2 mt-2 focus:scale-105 focus:text-white dark:focus:text-gray-600">
-                                <img src="/img/test.svg" class="w-[1.6rem] invert dark:invert-0 mr-3">
+                                <img src="/img/contact.svg" class="w-[1.6rem] invert dark:invert-0 mr-3">
                                 <h1 class="font-bold text-xl dark:text-gray-900">contact</h1>
                             </a>
                             <a href="/colors" class="flex items-center px-2 mt-2 focus:scale-105 focus:text-white dark:focus:text-gray-600">
