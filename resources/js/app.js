@@ -9,10 +9,10 @@ window.addEventListener("scroll", () => {
 
 function themeToggle() {
     document.querySelector("html").classList.toggle("dark");
-    document.querySelector("#btn-theme").querySelector("img").setAttribute("src", 
+    document.querySelectorAll(".btn-theme").forEach(btn => btn.querySelector("img").setAttribute("src", 
         document.querySelector("html").classList.contains("dark") ?
         "/img/dark.svg" : "/img/light-2.svg"
-    )
+    ));
 }
 
 window.themeToggle = themeToggle;

@@ -9,8 +9,8 @@
         @vite("resources/js/app.js")
         @vite("resources/css/app.css")
     </head>
-    <body class="relative w-screen h-screen flex flex-col bg-gray-700">
-        <img src="/img/logo-mavisite360.png" class="absolute w-[5rem] m-2">
+    <body class="relative w-screen min-w-[1200px] h-screen flex flex-col bg-gray-700">
+        <a href="/"><img src="/img/logo-mavisite360.png" class="absolute w-[5rem] m-2"></a>
         <div class="w-5/6 flex justify-center items-center mt-10 mx-auto p-3  h-fit rounded-xl bg-black">
             <div class="w-[5rem] h-[5rem] rounded-full bg-orange-50 mx-1"></div>
             <div class="w-[5rem] h-[5rem] rounded-full bg-orange-100 mx-1"></div>
@@ -47,11 +47,11 @@
         </div>
         <div class="w-full flex">
             <div class="m-10">
-                <h1 class="text-gray-50 text-[5rem]">Titre 1</h1>
-                <h2 class="text-gray-100 text-[4rem]">Titre 2</h2>
-                <h3 class="text-gray-150 text-[3rem]">Titre 3</h3>
-                <h4 class="text-gray-200 text-[2rem]">Text</h4>
-                <p class="text-gray-250 text-[1rem]">Sous text</p>
+                <h1 class="text-gray-50 text-[5rem] font-bold">Titre 1</h1>
+                <h2 class="text-gray-100 text-[4rem] font-semibold">Titre 2</h2>
+                <h3 class="text-gray-150 text-[3rem] font-semibold">Titre 3</h3>
+                <h4 class="text-gray-200 text-[2rem] font-semibold">Text</h4>
+                <p class="text-gray-250 text-[1rem] font-semibold">Sous text</p>
             </div>
             <div class="bg-gray-800 rounded-xl px-10 py-5 shadow-xl shadow-gray-800 w-[30rem] m-10">
                 <div class="flex items-center w-full border-b border-gray-150 mb-4 pb-2">
